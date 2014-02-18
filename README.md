@@ -6,19 +6,30 @@ TODO: Write a gem description
 
 Add this line to your application's Gemfile:
 
-    gem 'bootsp'
+    gem 'bootsp',:git=>"git@github.com:littleyang/bootsp.git"
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install bootsp
 
 ## Usage
 
-TODO: Write usage instructions here
+    in your application,find /app/assets/stylesheets/application.css add follow code:
+
+    ```
+    /*
+     *= require_self
+     *= require bootstrap
+     *= require_tree .
+    */
+    ```
+
+    in your application, find /app/assets/javascripts/application.js add follow code:
+
+    ```
+    //= require bootstrap
+    ```
 
 ## Contributing
 
